@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Kileia Riley, Spring 23 -->
+  <!-- Kileia Riley, Fall 23 -->
   <head>
     <meta charset="UTF-8" />
-    <title>Kileia Riley, Term Project, Spring 23</title>
+    <title>Kileia Riley, Term Project, Fall 23</title>
     <link href="stylesheet.css" rel="stylesheet" />
   </head>
 
   <body>
     <h1>What's in your Future?</h1>
 
+    <div id="intro"></div>
+    <br />
     <section class="choicesForFuture">
       <div id="House">
-        <div class="mansion">M</div>
-        <div class="apartment">A</div>
-        <div class="shack">S</div>
-        <div class="house">H</div>
+        <div class="mansion">Mansion</div>
+        <div class="apartment">Apartment</div>
+        <div class="shack">Shed</div>
+        <div class="house">House</div>
       </div>
+      <br />
 
       <div id="Spouse">
         <label for="spouseChoices">Who is your dream spouse?</label> <br />
@@ -24,6 +27,7 @@
         <input type="text" id="spouseChoices2" name="spouses" /> <br />
         <input type="text" id="spouseChoices3" name="spouses" /> <br />
       </div>
+      <br />
 
       <div id="Kids">
         <label for="numberOfKids">How many kids would you like?</label> <br />
@@ -31,6 +35,7 @@
         <input type="number" id="numberOfKids2" name="kids" /> <br />
         <input type="number" id="numberOfKids3" name="kids" /> <br />
       </div>
+      <br />
 
       <div id="Job">
         <label for="dreamJob">What is your dream job?</label> <br />
@@ -38,6 +43,7 @@
         <input type="text" id="dreamJob2" name="job" /> <br />
         <input type="text" id="dreamJob3" name="job" /> <br />
       </div>
+      <br />
 
       <div id="Car">
         <label for="dreamCar">What is your dream car?</label> <br />
@@ -47,11 +53,12 @@
       </div>
     </section>
 
+    <br />
     <button id="generateMASH" onclick="generateFuture()">Generate MASH</button>
+    <br />
+    <br />
 
-    <div id = "output">
-
-    </div>
+    <div id="output"></div>
     <script src="script.js"></script>
   </body>
 </html>
